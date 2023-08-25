@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let z = 0; // Số lượng số đã tìm thấy
+            let tong = 0; // Tổng các số đã tìm thấy
+            let a = 1; // Số hiện tại
+
+            for (let i = 1; z < 30; i++) {
+                if (a % 5 === 0) {
+                    tong += a;
+                    z++;
+                }
+                a++;
+            }
+
+            console.log(`Tổng của 30 số đầu tiên chia hết cho 5 là: ${tong}`);
+
+    </script>
+</body>
+</html>

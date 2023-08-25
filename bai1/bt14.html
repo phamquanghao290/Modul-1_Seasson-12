@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 0;
+        let b = 1;
+        let c = a + b;
+        let viTri = 2;
+
+        do {
+            for (let i = 2; ; i++) {
+                c = a + b;
+                a = b;
+                b = c;
+                viTri++;
+
+                if (c % 5 === 0) {
+                    console.log(`Số Fibonacci đầu tiên chia hết cho 5 là ${c}, ở vị trí thứ ${viTri}`);
+                    break;
+                }
+            }
+        } while (false);
+
+    </script>
+</body>
+
+</html>

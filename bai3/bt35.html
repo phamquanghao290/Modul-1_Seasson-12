@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 20;
+        let a = 0;
+        let b = 1;
+        let tong = 0;
+        let i =0;
+        do{
+            let c = a+b;
+            tong += c;
+            a=b;
+            a=c;
+            i++;
+        }while(i<n);
+        console.log(`Tổng của ${n} số đầu tiên trong dãy Fibonacci là: ${tong}`);
+    </script>
+</body>
+</html>
